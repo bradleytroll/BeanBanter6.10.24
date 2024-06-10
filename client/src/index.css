@@ -1,0 +1,180 @@
+/* Adjustments for dark mode */
+@import 'bulma/css/bulma.css';
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f9f9f9; /* Adjust text color */
+    background-color: #18140e; /* Adjust background color */
+  }
+  a:hover {
+    color: #f9f9f9; /* Adjust link hover color */
+  }
+  button {
+    background-color: #f9f9f9; /* Adjust button background color */
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .my-element {
+    background: blue;
+  }
+}
+
+/* General styles */
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: rgba(25, 26, 41, 0.87);
+  background-color: #242424;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Font style */
+.sofia-sans-extra-condensed-sofia {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Logo styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Card styles */
+.card {
+  padding: 2em;
+}
+
+/* Additional styles */
+.read-the-docs {
+  color: #888;
+}
+/* moved the hardcoded styling from logo.jsx */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #242424;
+  border-bottom: 1px solid #333;
+  }
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+  }
+
+.logoImage {
+  width: 100%;
+  display: flex;
+  /* position:relative; */
+  height:auto;
+  padding: 0;
+  border-radius: 50px;
+}
+.tagline {
+  font-size: 24px;
+  width: 70%;
+  text-align: center;
+  text-wrap: pretty;
+  background-color: #382023;
+  padding: 2%;
+  border-radius: 40px;
+  white-space: pre;
+  margin:auto;
+  color: #d5bda2; 
+  }
+
+.menuButton {
+  background-color: #d2b48c;
+  color: #301807;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.menuButtonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.modalcontent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.modalCloseButton {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  &:hover,
+  &:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+}
+
+.map {
+  display: grid;
+  float:right;
+  justify-content: center;
+  align-items: right;
+}
+
+.searchBar {
+  justify-content: center;
+}
+
+.card {
+  display: grid;
+}
+.cardTitle {
+  display: block;
+  position: relative;
+  justify-content: center;
+  font-size: large;
+  font-weight: bold;
+  padding: 0px;
+  margin-bottom: 20px;
+
+}
+
+.card-content {
+  padding: 2em;
+  justify-content: space-between;
+}

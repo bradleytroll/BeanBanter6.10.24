@@ -1,0 +1,161 @@
+/* Adjustments for dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #f9f9f9; /* Adjust text color */
+    background-color: #18140e; /* Adjust background color */
+  }
+  a:hover {
+    color: #f9f9f9; /* Adjust link hover color */
+  }
+  button {
+    background-color: #f9f9f9; /* Adjust button background color */
+  }
+
+}
+
+@media screen and (max-width: 1279px) {
+  .my-element {
+    background: green;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .my-element {
+    background: orange;
+  }
+}
+
+
+/* General styles */
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  color: rgba(25, 26, 41, 0.87);
+  background-color: #242424;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Font style */
+.sofia {
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Logo styles */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Card styles */
+.card {
+  padding: 2em;
+}
+
+/* Additional styles */
+.read-the-docs {
+  color: #888;
+}
+/*  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #242424;
+  border-bottom: 1px solid #333;
+  }
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1em;
+  }
+.tagline {
+  font-size: 24px;
+  text-align: center;
+  background-color: #382023;
+  padding: 2%;
+  border-radius: 20px;
+  white-space: pre;
+  margin:auto;
+  }
+.logoImage {
+  width: 100%;
+  display: flex;
+  float: left;
+  height:auto;
+  padding: 0;
+  border-radius: 50px;
+}
+.menuButton {
+  background-color: #d2b48c;
+  color: #301807;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.menuButtonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.modal {
+  display:flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modalcontent {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.modalCloseButton {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  &:hover,
+  &:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+}
